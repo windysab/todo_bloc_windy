@@ -11,6 +11,6 @@ class ActiveTodoCountBloc
       : super(ActiveTodoCountState(activeTodoCount: initialActiveTodoCount)) {
     on<CalculateActiveTodoCountEvent>((event, emit) {
       emit(state.copyWith(activeTodoCount: event.activeTodoCount));
-    });
+    });  
   }
 }
