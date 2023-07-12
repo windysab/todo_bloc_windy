@@ -1,7 +1,9 @@
 part of 'todo_list_bloc.dart';
 
 class TodoListState extends Equatable {
-  const TodoListState({required this.todos});
+  const TodoListState({
+    required this.todos,
+  });
 
   factory TodoListState.initial() {
     return TodoListState(todos: [

@@ -1,10 +1,14 @@
 part of 'todo_search_bloc.dart';
 
 class TodoSearchState extends Equatable {
-  const TodoSearchState({required this.searchTerm});
+  const TodoSearchState({
+    required this.searchTerm,
+  });
+
   factory TodoSearchState.initial() {
     return const TodoSearchState(searchTerm: '');
   }
+
   final String searchTerm;
 
   @override
